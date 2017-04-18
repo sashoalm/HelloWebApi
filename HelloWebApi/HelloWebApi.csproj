@@ -63,6 +63,8 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HelloWebApiController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -72,4 +74,8 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="App_Start\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
 </Project>

@@ -3,6 +3,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Web;
 using System.Web.SessionState;
+using System.Web.Http;
 
 namespace HelloWebApi
 {
@@ -10,7 +11,7 @@ namespace HelloWebApi
 	{
 		protected void Application_Start (Object sender, EventArgs e)
 		{
-
+			GlobalConfiguration.Configure(WebApiConfig.Register);
 		}
 
 		protected void Session_Start (Object sender, EventArgs e)
